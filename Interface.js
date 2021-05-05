@@ -14,11 +14,14 @@ function UdregnBMI() {
 
     if (BMI < 15) {
         document.getElementById("Betydning").innerHTML = "Din kat er undervægtig";
+        document.getElementById('billede').src = "Tynd.jpg";
     } else if (BMI >= 15 && BMI < 25) {
         document.getElementById("Betydning").innerHTML = "Din kat er normalvægtig";
+        document.getElementById('billede').src = "Normal.jpg";
 
     } else if ( BMI >=25) {
         document.getElementById("Betydning").innerHTML = "Din kat er ubeskrivelig fed"
+        document.getElementById('billede').src = "Chonker.png";
 
     } else {
         window.alert("Du fuckede det up, sunny boy");
