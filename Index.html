@@ -5,25 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BMI for katte</title>
-    <script defer src="Interface.js"></script>
+    <script src="Interface.js"></script>
+    <script src="Style.css"></script>
 </head>
 <body>
     <h1>Udregn din kats BMI</h1>
     <form id="form" name="bmiForm">
-        Kattens navn: <input type="text" name="Navn" size="10"><br />
-        Kattens Race : <input type="text" name="Race" size="10"><br />
-        Kattens omkreds (cm): <input type="text" name="Omkreds" size="10"><br />
-        Længde på kattens bagben (cm): <input type="text" name="Længde" size="10"><br />
+        <label>Omkreds</label> 
+        <input id="Omkreds" type="text" name="Omkreds" size="10"><br/>
+        <label>Ben længde (cm)</label> 
+        <input id="Leg" type="text" name="Længde" size="10"><br />
         <br />
         <input type="button" value="Udregn  BMI" onClick="UdregnBMI()"><br />
         <br />
-        Kattens BMI: <input type="text" name="BMI" size="10"><br />
-        Men hvad betyder det?: <input type="text" name="Resultat" size="25"><br />
+        <p id="BMI">Kattens BMI er: 0.00</p>
+        <p id="Betydning">Det betyder så: </p>
         <br />
-        <button type="reset">Reset</button>
         </form>   
 
 </body>
 </html>
-<script src="Interface.js"></script>
-<script src="Style.css"></script>
