@@ -24,7 +24,7 @@ function UdregnBMI() {
         document.getElementById('billede').src = "Chonker.png";
 
     } else {
-        window.alert("Du fuckede det up, sunny boy");
+        window.alert("Du har intastet noget forkert, Prøv igen");
     }
 }
 
